@@ -981,6 +981,10 @@ body {
     .page-hero-content h1 {
         font-size: 2.5rem;
     }
+    .mega-dropdown{
+        display: none;
+    }
+
     
     .about-main h2 {
         font-size: 2rem;
@@ -1023,6 +1027,9 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }    
+    .mega-dropdown{
+        display: none;
     }
 
     .hero-title {
