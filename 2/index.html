@@ -15,15 +15,15 @@
                     <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='%23D32F2F'%3EES%3C/text%3E%3Ctext x='50' y='40' font-family='Arial, sans-serif' font-size='18' fill='%23333'%3EENERGY%3C/text%3E%3Ctext x='50' y='55' font-family='Arial, sans-serif' font-size='12' fill='%23666'%3ESOLUTIONS%3C/text%3E%3C/svg%3E" alt="Energy Solutions Logo">
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
 
                     <li class="nav-item dropdown">
                         <a href="#services" class="nav-link dropdown-toggle">SERVICES <i class="fas fa-chevron-down"></i></a>
-                        <div class="mega-dropdown">
+                         <div class="mega-dropdown">
                             <div class="dropdown-column">
-                                <h4>ENERGY AUDIT</h4>
-                                <ul>
+                                <a href="./energyAudit/enegryAudit.html"><h4>ENERGY AUDIT</h4></a>
+                             <ul>
                                     <li><a href="energyAudit/fule-gas-analysis.html">FLUE GAS ANALYSIS</a></li>
                                     <li><a href="energyAudit/boiler-performance-test.html">BOILER PERFORMANCE TEST</a></li>
                                     <li><a href="energyAudit/thermography-services.html">THERMOGRAPHY SERVICES</a></li>
@@ -35,14 +35,14 @@
                                 </ul>
                             </div>
                             <div class="dropdown-column">
-                                <h4>WATER AUDIT</h4>
+                                <a href="./waterAudit/waterAudit.html"><h4>WATER AUDIT</h4></a>
                                 <ul>
-                                    <li><a href="waterAudit/water-balance-study-services.html">WATER BALANCE STUDY SERVICES</a></li>
-                                    <li><a href="waterAudit/flow-measurement.html">FLOW MEASUREMENT</a></li>
-                                    <li><a href="waterAudit/hydraulic-study-services.html">HYDRAULIC STUDY SERVICES</a></li>
+                                    <li><a href="water-audit.html">WATER BALANCE STUDY SERVICES</a></li>
+                                    <li><a href="water-audit.html">FLOW MEASUREMENT</a></li>
+                                    <li><a href="water-audit.html">HYDRAULIC STUDY SERVICES</a></li>
                                 </ul>
-                                <a href="SAFETY AUDIT"><h4>SAFETY AUDIT</h4></a>
-                                <a href="SOLAR AUDIT"><h4>SOLAR-RENEWABLE ENERGY SOLUTIONS</h4></a>
+                                <a href="./SafetyAudit.html"><h4>SAFETY AUDIT</h4></a>
+                                <a href="./SolarAudit.html"><h4>SOLAR-RENEWABLE ENERGY SOLUTIONS</h4></a>
                             </div>
                         </div>
                     </li>
@@ -90,7 +90,7 @@
                         <p class="service-description">
                             An Energy Audit service is designed to evaluate the energy consumption of your home, office, or industrial facility to identify opportunities for energy savings. The audit involves a thorough inspection of your energy systems, including heating, cooling, lighting, and equipment. By analyzing energy use patterns, the audit provides actionable recommendations to improve energy efficiency, reduce energy costs, and enhance environmental sustainability. Implementing these recommendations can lead to significant savings on energy bills, lower carbon footprint, and a more sustainable operation.
                         </p>
-                        <button class="read-more-btn">
+                        <button class="read-more-btn" onclick="energyaudit()">
                             Read More <i class="fas fa-play"></i>
                         </button>
                     </div>
@@ -106,7 +106,7 @@
                         <p class="service-description">
                             A Water Audit is a comprehensive analysis designed to assess water use within a facility, identify inefficiencies, and propose solutions to optimize water consumption. This service includes a detailed examination of water supply sources, distribution systems, and usage patterns. The audit aims to reduce water waste, lower costs, and enhance sustainability by identifying leaks, inefficient fixtures, and opportunities for water reuse and conservation. Implementing the recommendations from a water audit can lead to significant savings on water bills and contribute to environmental conservation efforts.
                         </p>
-                        <button class="read-more-btn">
+                        <button class="read-more-btn" onclick="wateraudit()">
                             Read More <i class="fas fa-play"></i>
                         </button>
                     </div>
@@ -128,7 +128,7 @@
                         <p class="service-description">
                             Ensure your workplace is compliant and secure with our comprehensive Safety Audit service. Our team of experienced professionals conducts thorough evaluations of your facilities, identifying potential hazards and ensuring adherence to safety regulations. We provide detailed reports with actionable recommendations to improve safety standards, reduce risks, and promote a culture of safety. Protect your employees, minimize liability, and maintain a safe working environment with our expert safety audit solutions.
                         </p>
-                        <button class="read-more-btn">
+                        <button class="read-more-btn" >
                             Read More <i class="fas fa-play"></i>
                         </button>
                     </div>
@@ -183,10 +183,10 @@
                 <div class="footer-section">
                     <h3 class="footer-title">SERVICES</h3>
                     <ul class="footer-links">
-                        <li><a href="#energy-audit">Energy Audit</a></li>
-                        <li><a href="#water-audit">Water Audit</a></li>
-                        <li><a href="#safety-audit">Safety Audit</a></li>
-                        <li><a href="#solar-solutions">Solar – Renewable Energy Solutions</a></li>
+                        <li><a href="./energyAudit/enegryAudit.html">Energy Audit</a></li>
+                        <li><a href="./waterAudit/waterAudit.html">Water Audit</a></li>
+                        <li><a href="./SafetyAudit.html">Safety Audit</a></li>
+                        <li><a href="./SolarAudit.html">Solar – Renewable Energy Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -223,5 +223,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function wateraudit(){
+            window.location.href = "./waterAudit/waterAudit.html";
+        };
+        function energyaudit(){
+            window.location.href = "./energyAudit/enegryAudit.html";
+        };
+        function safetyaudit(){
+            window.location.href = "./SafetyAudit.html";
+        };
+        function solaraudit(){
+            window.location.href = "./SolarAudit.html";
+        };
+    </script>
 </body>
 </html>
