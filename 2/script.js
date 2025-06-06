@@ -188,3 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.getElementsByClassName("dropdown-toggle")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("mega-dropdown")[0].style.display = "flex"
+})
