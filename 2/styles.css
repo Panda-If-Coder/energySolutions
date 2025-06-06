@@ -1196,17 +1196,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .page-hero-content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .about-main h2 {
-        font-size: 2rem;
-    }
-    
-    .about-section {
-        padding: 20px;
-    }
+  .page-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-main h2 {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
 
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1239,9 +1239,9 @@ body {
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
+  .container {
+    padding: 0 15px;
+  }
 
   .hero-title {
     font-size: 2rem;
